@@ -1,0 +1,36 @@
+@media (min-width: 1400px) {
+}
+@media (min-width: 1200px) {
+  .profail-content {
+    margin: 0 80px 0 0;
+  }
+}
+@media (min-width: 992px) {
+  header nav {
+    position: static !important;
+    display: block;
+  }
+  .about-img {
+    margin: 0;
+  }
+  .about-content {
+    margin: 0 0 0 40px;
+  }
+  .experience-items {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .about-items {
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .profail-img img {
+    width: 500px;
+  }
+  .contact-items {
+    width: 350px;
+  }
+}

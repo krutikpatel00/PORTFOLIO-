@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/font/Inter/stylesheet.css" />
+    <link rel="stylesheet" href="../dist/font/RemixIcon_Fonts_v3.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="../dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../dist/css/owl.theme.green.css">
+    <link rel="stylesheet" href="../dist/output.css" />
+    <style>
+        .nav-manu {
+            right: 0;
+            transition: 0.3s all;
+        }
+
+        .book-bounce {
+            animation: book-bounce 1.5s linear infinite alternate;
+        }
+
+        @keyframes book-bounce {
+            0% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .herobanner-spin {
+            animation: herobanner-spin 3s linear infinite;
+        }
+
+        @keyframes herobanner-spin {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .left-right {
+            animation: left-right 2s linear infinite alternate;
+        }
+
+        @keyframes left-right {
+            0% {
+                transform: translatex(40px);
+            }
+
+            100% {
+                transform: translatex(0);
+            }
+        }
+
+        .featured-content img {
+            width: 40px !important;
+        }
+
+        /* scroll-left */
+        .scroll-left {
+            animation: scroll-left 40s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bg-black py-1 hidden md:block px-12">
+            <div class="flex justify-between">
+                <div class="flex items-center">
+                    <p class="text-white me-4">Call Us: +1 800 123 456 789</p>
+                    <p class="text-white">- Mail Us: Itcroc@mail.com</p>
+                </div>
+                <div class="flex">
+                    <p class="text-white me-8 hidden lg:block">
+                        <i class="ri-map-pin-fill text-violet-600 me-2"></i>684 West
+                        College St. Sun City, USA
+                    </p>
+                    <div>
+                        <a href="#" class="mx-2">
+                            <i class="ri-youtube-fill text-white hover:text-violet-600 transition-all duration-300"></i>
+                        </a>
+                        <a href="#" class="mx-2">
+                            <i class="ri-twitter-fill text-white hover:text-violet-600 transition-all duration-300"></i>
+                        </a>
+                        <a href="#" class="mx-2">
+                            <i
+                                class="ri-whatsapp-fill text-white hover:text-violet-600 transition-all duration-300"></i>
+                        </a>
+                        <a href="#" class="mx-2">
+                            <i
+                                class="ri-facebook-fill text-white hover:text-violet-600 transition-all duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative px-12 py-4 lg:py-0 shadow-sm">
+            <div class="flex items-center justify-between">
+                <a href="#"><img src="../dist/img/logo_1.png" alt="logo_1" title="logo_1" /></a>
+                <nav
+                    class="fixed top-0 bottom-0 -right-[200%] bg-white shadow-xl lg:shadow-none z-30 lg:bg-transparent w-80 lg:w-auto lg:static  lg:block duration-[0.4s]">
+                    <a href="#"
+                        class="text-3xl nav-close inline-block w-12 h-12 leading-[48px] text-center mx-4 border border-violet-600 rounded-lg my-4 hover:bg-violet-600 hover:text-white lg:hidden duration-300"><i
+                            class="ri-close-line inline-block"></i></a>
+                    <ul class="flex flex-col lg:flex-row items-center px-6 py-4 lg:py-0 lg:px-0">
+                        <li class="w-full relative group">
+                            <a href="#"
+                                class="flex lg:items-center my-2 lg:my-0 justify-between lg:mx-4 lg:py-6 font-semibold text-violet-600">Home
+                                <i class="ri-arrow-down-s-line"></i></a>
+                            <div
+                                class="dropdwon lg:absolute lg:top-full lg:left-0 bg-white lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible lg:opacity-0 lg:z-20 lg:shadow-xl lg:duration-300 hidden lg:block">
+                                <ul class="w-60">
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Home
+                                            Default</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Home
+                                            Elegant</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Home
+                                            Classic</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Home
+                                            Classic
+                                            2</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Online
+                                            Course</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Home
+                                            Marketplace</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Home
+                                            University</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Home
+                                            Ecommerce</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Home
+                                            kindergarten</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Machine
+                                            Learning</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="w-full">
+                            <a href="#"
+                                class="flex lg:items-center my-2 lg:my-0 justify-between lg:mx-4 lg:py-6 font-semibold duration-300 hover:text-violet-600">About</a>
+                        </li>
+                        <li class="w-full relative group">
+                            <a href="#"
+                                class="flex lg:items-center my-2 lg:my-0 justify-between lg:mx-4 lg:py-6 font-semibold duration-300 hover:text-violet-600">Course
+                                <i class="ri-arrow-down-s-line"></i></a>
+                            <div
+                                class="dropdwon lg:absolute lg:top-full lg:left-0 bg-white lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible lg:opacity-0 lg:z-20 lg:shadow-xl lg:duration-300 hidden lg:block">
+                                <ul class="w-60">
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Course
+                                            Archive</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Course
+                                            Archive 2</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Course
+                                            List
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Course
+                                            Grid
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Course
+                                            Details
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Course
+                                            Details 2
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Course
+                                            Details 3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="w-full relative group">
+                            <a href="#"
+                                class="flex lg:items-center my-2 lg:my-0 justify-between lg:mx-4 lg:py-6 font-semibold duration-300 hover:text-violet-600">Pages
+                                <i class="ri-arrow-down-s-line"></i></a>
+                            <div
+                                class="dropdwon lg:absolute lg:top-full lg:left-0 bg-white lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible lg:opacity-0 lg:z-20 lg:shadow-xl lg:duration-300 hidden lg:block">
+                                <ul class="w-60">
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Login</a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Student
+                                            Registration
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Instructor
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Become
+                                            an Instructors
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Event
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Event
+                                            Details
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Shop
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="w-full relative group">
+                            <a href="#"
+                                class="flex lg:items-center my-2 lg:my-0 justify-between lg:mx-4 lg:py-6 font-semibold duration-300 hover:text-violet-600">Blog
+                                <i class="ri-arrow-down-s-line"></i></a>
+                            <div
+                                class="dropdwon lg:absolute lg:top-full lg:left-0 bg-white lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible lg:opacity-0 lg:z-20 lg:shadow-xl lg:duration-300 hidden lg:block">
+                                <ul class="w-60">
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Blog
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="px-4 hover:border-s-2 duration-300 hover:border-violet-600 border-s-transparent border-s-2">
+                                        <a href="#"
+                                            class="inline-block font-semibold py-2  duration-300 hover:text-violet-600">Blog
+                                            Details
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="w-full">
+                            <a href="#"
+                                class="flex lg:items-center my-2 lg:my-0 lg:mx-4 lg:py-6 font-semibold duration-300 hover:text-violet-600">Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex items-center">
+                    <a href="#" class="inline-block text-2xl lg:hidden toggle-manu">
+                        <i class="ri-menu-line"></i>
+                    </a>
+                    <a href="#"
+                        class="border me-4 rounded-md hover:bg-violet-600 hover:text-white transition-all duration-300 py-2 text-black font-semibold px-4 hidden lg:block">login</a>
+                    <a href="#"
+                        class="hidden lg:block py-2 rounded-md px-4 border border-violet-600 text-white font-semibold transition-all duration-300 bg-violet-600 hover:bg-white hover:border-violet-600 hover:text-violet-600">Get
+                        Started Free</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section class="banner py-20 bg-[#F7F8FD]">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap items-center">
+                    <div class="lg:w-6/12 w-full">
+                        <div class="banner-items px-4 mb-8 lg:mt-0 relative z-10">
+                            <h5 class="text-pink-600 font-semibold">EDUCATION SOLUTION</h5>
+                            <h1 class="sm:text-6xl text-5xl font-bold py-6 leading-[1.2]">Your Awesome <span
+                                    class="text-pink-600">Online</span> Course</h1>
+                            <p class="text-lg text-black font-semibold ">
+                                Lorem Ipsum is simply dummy text of the printing typesetting
+                                industry. Lorem Ipsum has been
+                            </p>
+                            <div class="flex items-center mt-6">
+                                <a href="#"
+                                    class="inline-block me-4 py-2 border border-transparent rounded-md bg-violet-600 px-4 text-white hover:bg-transparent hover:border-violet-600 hover:text-violet-600 transition-all duration-300">View
+                                    Course</a>
+                                <a href="#"
+                                    class="inline-block py-2 px-4 rounded-md bg-pink-600 text-white border border-transparent hover:bg-transparent hover:border-pink-600 hover:text-pink-600">
+                                    Explore More</a>
+                            </div>
+                            <div class="hidden lg:block">
+                                <div class="book-bounce duration-[10s] absolute top-full -left-6 -z-10">
+                                    <img src="../dist/img/herobanner__1.png" alt="herobanner__1" title="herobanner__1"
+                                        class="opacity-50">
+                                </div>
+                                <div class="absolute -top-20 left-0 herobanner-spin">
+                                    <img src="../dist/img/herobanner__2-1.png" alt="">
+                                </div>
+                                <div class="absolute -top-16 left-60 book-bounce">
+                                    <img src="../dist/img/herobanner__3-1.png" alt="">
+                                </div>
+                                <div class="absolute -top-10 left-80 left-right">
+                                    <img src="../dist/img/herobanner__4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 w-full">
+                        <div class="banner-items relative">
+                            <img src="../dist/img/herobanner__video.jpg" alt="" class=" w-full rounded-2xl ms-auto">
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <a href="#"
+                                    class=" h-20 w-20 leading-[80px] bg-pink-600 inline-block rounded-full text-center text-4xl text-white">
+                                    <i class="ri-play-fill "></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- headline -->
+        <section class="relative overflow-hidden">
+            <div class=" h-80">
+                <div class=" absolute w-full h-full translate-x-full scroll-left mx-4 py10">
+                    <div class="flex py-20">
+                        <div
+                            class="shrink-0 w-64 bg-white rounded-lg p-6 mx-4 shadow-[0_0_50px_10px_#5f2ded1a] relative group duration-300 hover:bg-violet-600 hover:-translate-y-2 group">
+                            <img src="../dist/img/Group-20514.svg"
+                                class="mb-2 group-hover:brightness-0 group-hover:invert duration-300" alt="">
+                            <a href="#"
+                                class="inline-block font-bold text-xl hover:text-pink-600 group-hover:text-white">Marketing</a>
+                            <div
+                                class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                            </div>
+                        </div>
+                        <div
+                            class="w-64 shrink-0 bg-white rounded-lg p-6 mx-4 shadow-[0_0_50px_10px_#5f2ded1a] relative group duration-300 hover:bg-violet-600 hover:-translate-y-2 group">
+                            <img src="../dist/img/Group-20511.svg"
+                                class="mb-2 group-hover:brightness-0 group-hover:invert duration-300" alt="">
+                            <a href="#"
+                                class="inline-block font-bold text-xl hover:text-pink-600 group-hover:text-white">Marketing</a>
+                            <div
+                                class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                            </div>
+                        </div>
+                        <div
+                            class="w-64 shrink-0 bg-white rounded-lg p-6 mx-4 shadow-[0_0_50px_10px_#5f2ded1a] relative group duration-300 hover:bg-violet-600 hover:-translate-y-2 group">
+                            <img src="../dist/img/Group-20512-1.svg"
+                                class="mb-2 group-hover:brightness-0 group-hover:invert duration-300" alt="">
+                            <a href="#"
+                                class="inline-block font-bold text-xl hover:text-pink-600 group-hover:text-white">Marketing</a>
+                            <div
+                                class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                            </div>
+                        </div>
+                        <div
+                            class="w-64 shrink-0 bg-white rounded-lg p-6 mx-4 shadow-[0_0_50px_10px_#5f2ded1a] relative group duration-300 hover:bg-violet-600 hover:-translate-y-2 group">
+                            <img src="../dist/img/Group-20515.svg"
+                                class="mb-2 group-hover:brightness-0 group-hover:invert duration-300" alt="">
+                            <a href="#"
+                                class="inline-block font-bold text-xl hover:text-pink-600 group-hover:text-white">Marketing</a>
+                            <div
+                                class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                            </div>
+                        </div>
+                        <div
+                            class="w-64 shrink-0 bg-white rounded-lg p-6 mx-4 shadow-[0_0_50px_10px_#5f2ded1a] relative group duration-300 hover:bg-violet-600 hover:-translate-y-2 group">
+                            <img src="../dist/img/Group-20516.svg"
+                                class="mb-2 group-hover:brightness-0 group-hover:invert duration-300" alt="">
+                            <a href="#"
+                                class="inline-block font-bold text-xl hover:text-pink-600 group-hover:text-white">Marketing</a>
+                            <div
+                                class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                            </div>
+                        </div>
+                        <div
+                            class="w-64 shrink-0 bg-white rounded-lg p-6 mx-4 shadow-[0_0_50px_10px_#5f2ded1a] relative group duration-300 hover:bg-violet-600 hover:-translate-y-2 group">
+                            <img src="../dist/img/Group-20514.svg"
+                                class="mb-2 group-hover:brightness-0 group-hover:invert duration-300" alt="">
+                            <a href="#"
+                                class="inline-block font-bold text-xl hover:text-pink-600 group-hover:text-white">Marketing</a>
+                            <div
+                                class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Featured Course -->
+        <section class="featured-course py-14">
+            <div class="container mx-auto px-4">
+                <div class="featured-title mb-12">
+                    <h2 class=" sm:text-5xl text-4xl text-gray-600 font-bold">Featured Course</h2>
+                </div>
+                <div class="owl-carousel-1 owl-carousel owl-theme">
+                    <div class="featured-items group shadow-[0_0_20px_10px_#5f2ded0d] p-4">
+                        <div class="featured-img relative overflow-hidden ">
+                            <img src="../dist/img/img-4.jpg"
+                                class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                alt="">
+                            <a href="#"
+                                class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-blue-600 text-white">Featured</a>
+                            <i
+                                class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                        </div>
+                        <div class="featured-content">
+                            <ul class="flex justify-between py-4">
+                                <li><i class="ri-git-repository-line text-violet-600"></i> 4 Lesson</li>
+                                <li><i class="ri-time-line text-violet-600"></i> 5hours 35min</li>
+                            </ul>
+                            <a href="#">
+                                <h3 class="text-[20px] font-semibold hover:text-violet-600">Statistics Data Scince and
+                                    Business Analysis</h3>
+                            </a>
+                            <p class="text-violet-600 py-4 font-semibold">$60.00</p>
+                            <div class="flex items-center justify-between pt-4 border-t">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img src="../dist/img/teacher__1.png" alt="teacher__1" title="teacher__1"
+                                            class="w-12">
+                                    </li>
+                                    <li class="ms-2">
+                                        Jhon Sina
+                                    </li>
+                                </ul>
+                                <div>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-items group shadow-[0_0_20px_10px_#5f2ded0d] p-4">
+                        <div class="featured-img relative overflow-hidden ">
+                            <img src="../dist/img/img-1.jpg"
+                                class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                alt="">
+                            <a href="#"
+                                class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-pink-600 text-white">Lenguage</a>
+                            <i
+                                class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                        </div>
+                        <div class="featured-content">
+                            <ul class="flex justify-between py-4">
+                                <li><i class="ri-git-repository-line text-violet-600"></i> 4 Lesson</li>
+                                <li><i class="ri-time-line text-violet-600"></i> 5hours 35min</li>
+                            </ul>
+                            <a href="#">
+                                <h3 class="text-[20px] font-semibold hover:text-violet-600">Statistics Data Scince and
+                                    Business Analysis</h3>
+                            </a>
+                            <p class="text-violet-600 py-4 font-semibold">$66.00</p>
+                            <div class="flex items-center justify-between pt-4 border-t">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img src="../dist/img/teacher__1.png" alt="teacher__1" title="teacher__1"
+                                            class="w-12">
+                                    </li>
+                                    <li class="ms-2">
+                                        Jhon Sina
+                                    </li>
+                                </ul>
+                                <div>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-items group shadow-[0_0_20px_10px_#5f2ded0d] p-4">
+                        <div class="featured-img relative overflow-hidden ">
+                            <img src="../dist/img/img-2.jpg"
+                                class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                alt="">
+                            <a href="#"
+                                class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-green-600 text-white">Language</a>
+                            <i
+                                class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                        </div>
+                        <div class="featured-content">
+                            <ul class="flex justify-between py-4">
+                                <li><i class="ri-git-repository-line text-violet-600"></i> 4 Lesson</li>
+                                <li><i class="ri-time-line text-violet-600"></i> 5hours 35min</li>
+                            </ul>
+                            <a href="#">
+                                <h3 class="text-[20px] font-semibold hover:text-violet-600">Statistics Data Scince and
+                                    Business Analysis</h3>
+                            </a>
+                            <p class="text-violet-600 py-4 font-semibold">$55.00</p>
+                            <div class="flex items-center justify-between pt-4 border-t">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img src="../dist/img/teacher__1.png" alt="teacher__1" title="teacher__1"
+                                            class="w-12">
+                                    </li>
+                                    <li class="ms-2">
+                                        Jhon Sina
+                                    </li>
+                                </ul>
+                                <div>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-items group shadow-[0_0_20px_10px_#5f2ded0d] p-4">
+                        <div class="featured-img relative overflow-hidden ">
+                            <img src="../dist/img/img-3.jpg"
+                                class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                alt="">
+                            <a href="#"
+                                class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-pink-600 text-white">Artificial</a>
+                            <i
+                                class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                        </div>
+                        <div class="featured-content">
+                            <ul class="flex justify-between py-4">
+                                <li><i class="ri-git-repository-line text-violet-600"></i> 4 Lesson</li>
+                                <li><i class="ri-time-line text-violet-600"></i> 5hours 35min</li>
+                            </ul>
+                            <a href="#">
+                                <h3 class="text-[20px] font-semibold hover:text-violet-600">Statistics Data Scince and
+                                    Business Analysis</h3>
+                            </a>
+                            <p class="text-violet-600 py-4 font-semibold">$60.00</p>
+                            <div class="flex items-center justify-between pt-4 border-t">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img src="../dist/img/teacher__1.png" alt="teacher__1" title="teacher__1"
+                                            class="w-12">
+                                    </li>
+                                    <li class="ms-2">
+                                        Jhon Sina
+                                    </li>
+                                </ul>
+                                <div>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-items group shadow-[0_0_20px_10px_#5f2ded0d] p-4">
+                        <div class="featured-img relative overflow-hidden ">
+                            <img src="../dist/img/img-5-700x417.jpg"
+                                class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                alt="">
+                            <a href="#"
+                                class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-yellow-500 text-white">Featured</a>
+                            <i
+                                class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                        </div>
+                        <div class="featured-content">
+                            <ul class="flex justify-between py-4">
+                                <li><i class="ri-git-repository-line text-violet-600"></i> 4 Lesson</li>
+                                <li><i class="ri-time-line text-violet-600"></i> 5hours 35min</li>
+                            </ul>
+                            <a href="#">
+                                <h3 class="text-[20px] font-semibold hover:text-violet-600">Statistics Data Scince and
+                                    Business Analysis</h3>
+                            </a>
+                            <p class="text-violet-600 py-4 font-semibold">$70.00</p>
+                            <div class="flex items-center justify-between pt-4 border-t">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img src="../dist/img/teacher__1.png" alt="teacher__1" title="teacher__1"
+                                            class="w-12">
+                                    </li>
+                                    <li class="ms-2">
+                                        Jhon Sina
+                                    </li>
+                                </ul>
+                                <div>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                    <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Center -->
+        <section class="learning-center py-14">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap items-center">
+                    <div class="lg:w-6/12 w-full">
+                        <div class="learning-img">
+                            <img src="../dist/img/ilastration.png" alt="" class="w-full card">
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 w-full">
+                        <div class="learning-items lg:ms-6 mt-8 lg:mt-0">
+                            <h3 class="text-pink-600 font-semibold">DUCATION SOLUTION</h3>
+                            <h2 class="sm:text-5xl text-4xl font-bold py-6 text-gray-600">Welcome to the online Learning
+                                Center</h2>
+                            <p class="text-xl mb-6 text-gray-600">25+Contrary to popular belief, Lorem Ipsum is not
+                                simply random text
+                                roots in a piece of
+                                classical Latin literature from 45 BC</p>
+                            <div>
+                                <ul class="flex my-4">
+                                    <li><i
+                                            class="ri-check-line leading-8 inline-block h-8 w-8 text-center bg-[#5F2DED0A] rounded-md me-2 text-violet-600"></i>
+                                    </li>
+                                    <li>Explore a variety of fresh educational teach</li>
+                                </ul>
+                                <ul class="flex my-4">
+                                    <li><i
+                                            class="ri-check-line leading-8 inline-block h-8 w-8 text-center bg-[#5F2DED0A] rounded-md me-2 text-violet-600"></i>
+                                    </li>
+                                    <li>Re-imagined interective video learning</li>
+                                </ul>
+                                <ul class="flex my-4">
+                                    <li><i
+                                            class="ri-check-line leading-8 inline-block h-8 w-8 text-center bg-[#5F2DED0A] rounded-md me-2 text-violet-600"></i>
+                                    </li>
+                                    <li> True white level course platform</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- populer-subjects -->
+        <section class="populer-subjects py-14">
+            <div class="container mx-auto px-4">
+                <div class="populer-title mb-10 px-4">
+                    <div class="flex flex-wrap items-center">
+                        <div class="md:w-6/12 w-full">
+                            <div class="populer-subjects-title text-center md:text-start">
+                                <span
+                                    class="bg-[#E7DEFF] py-1 px-4 rounded-full text-violet-600 font-bold text-sm inline-block">Course
+                                    List</span>
+                                <h4 class="sm:text-5xl text-4xl font-bold mt-4 text-gray-600">
+                                    Populer <span class="inline-block border-b-[6px] border-pink-600">Subjects</span>
+                                </h4>
+                                <p class="mt-4">Forging relationships between multi to national governments and global
+                                    NGOs
+                                    begins.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-6/12 w-full">
+                            <div class="populer-subjects-btn md:text-end text-center">
+                                <a href="#"
+                                    class="py-3 inline-block mt-4 md:mt-0 px-6 font-semibold text-white bg-pink-600 rounded-md hover:bg-white border border-pink-600 hover:text-pink-600">View
+                                    All
+                                    Courses <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="populer-subjects-inner">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+                            <div
+                                class="shadow-[0_0_50px_10px_#5f2ded1a] populer-subjects-items rounded-xl p-6 bg-white sm:m-2 my-2 relative group duration-300 hover:bg-violet-600 hover:-translate-y-2">
+                                <img src="../dist/img/Group-20515.svg"
+                                    class="group-hover:brightness-0 group-hover:invert duration-300" alt="Group-20515"
+                                    title="Group-20515">
+                                <a href="#"
+                                    class="inline-block font-bold text-xl hover:text-pink-600 pt-2 mb-1 group-hover:text-white duration-300">Featured</a>
+                                <p class="text-md text-gray-600 group-hover:text-white duration-300">03 Courses</p>
+                                <div
+                                    class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                    <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+                            <div
+                                class="shadow-[0_0_50px_10px_#5f2ded1a] populer-subjects-items rounded-xl p-6 bg-white sm:m-2 my-2 group duration-300 hover:bg-violet-600 relative hover:-translate-y-2">
+                                <img src="../dist/img/Group-20515.svg" alt=""
+                                    class="group-hover:brightness-0 group-hover:invert duration-300">
+                                <a href="#"
+                                    class="inline-block font-bold text-xl hover:text-pink-600 pt-2 mb-1 group-hover:text-white duration-300">Health
+                                    & Fitness</a>
+                                <p class="text-md text-gray-600 group-hover:text-white duration-300 ">00 Courses</p>
+                                <div
+                                    class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                    <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+                            <div
+                                class="shadow-[0_0_50px_10px_#5f2ded1a] populer-subjects-items rounded-xl p-6 bg-white sm:m-2 my-2 group duration-300 hover:bg-violet-600 relative hover:-translate-y-2">
+                                <img src="../dist/img/Group-20511.svg" alt=""
+                                    class="group-hover:brightness-0 group-hover:invert duration-300">
+                                <a href="#"
+                                    class="inline-block font-bold text-xl hover:text-pink-600 pt-2 mb-1 group-hover:text-white duration-300">Language</a>
+                                <p class="text-md text-gray-600 group-hover:text-white duration-300">04 Courses</p>
+                                <div
+                                    class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                    <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+                            <div
+                                class="shadow-[0_0_50px_10px_#5f2ded1a] populer-subjects-items rounded-xl p-6 bg-white sm:m-2 my-2 group duration-300 hover:bg-violet-600 relative hover:-translate-y-2">
+                                <img src="../dist/img/Group-20515.svg" alt=""
+                                    class="group-hover:brightness-0 group-hover:invert duration-300">
+                                <a href="#"
+                                    class="inline-block font-bold text-xl hover:text-pink-600 pt-2 mb-1 group-hover:text-white duration-300">Optimize</a>
+                                <p class="text-md text-gray-600 group-hover:text-white duration-300">01 Courses</p>
+                                <div
+                                    class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                    <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+                            <div
+                                class="shadow-[0_0_50px_10px_#5f2ded1a] populer-subjects-items rounded-xl p-6 bg-white sm:m-2 my-2 group duration-300 hover:bg-violet-600 relative hover:-translate-y-2">
+                                <img src="../dist/img/Group-20516.svg" alt=""
+                                    class="group-hover:brightness-0 group-hover:invert duration-300">
+                                <a href="#"
+                                    class="inline-block font-bold text-xl hover:text-pink-600 pt-2 mb-1 group-hover:text-white duration-300">Programming
+                                    Tech</a>
+                                <p class="text-md text-gray-600 group-hover:text-white duration-300">01 Courses</p>
+                                <div
+                                    class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                    <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+                            <div
+                                class="shadow-[0_0_50px_10px_#5f2ded1a] populer-subjects-items rounded-xl p-6 bg-white sm:m-2 my-2 group duration-300 hover:bg-violet-600 relative hover:-translate-y-2">
+                                <img src="../dist/img/Group-20512-1.svg" alt=""
+                                    class="group-hover:brightness-0 group-hover:invert duration-300">
+                                <a href="#"
+                                    class="inline-block font-bold text-xl hover:text-pink-600 pt-2 mb-1 group-hover:text-white duration-300">SEO</a>
+                                <p class="text-md text-gray-600 group-hover:text-white duration-300">03 Courses</p>
+                                <div
+                                    class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                    <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+                            <div
+                                class="shadow-[0_0_50px_10px_#5f2ded1a] populer-subjects-items rounded-xl p-6 bg-white sm:m-2 my-2 group duration-300 hover:bg-violet-600 relative hover:-translate-y-2">
+                                <img src="../dist/img/Group-20511.svg" alt=""
+                                    class="group-hover:brightness-0 group-hover:invert duration-300">
+                                <a href="#"
+                                    class="inline-block font-bold text-xl hover:text-pink-600 pt-2 mb-1 group-hover:text-white duration-300">Technology
+                                </a>
+                                <p class="text-md text-gray-600 group-hover:text-white duration-300">03 Courses</p>
+                                <div
+                                    class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                    <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+                            <div
+                                class="shadow-[0_0_50px_10px_#5f2ded1a] populer-subjects-items rounded-xl p-6 bg-white sm:m-2 my-2 group duration-300 hover:bg-violet-600 relative hover:-translate-y-2">
+                                <img src="../dist/img/Group-20514.svg" alt=""
+                                    class="group-hover:brightness-0 group-hover:invert duration-300">
+                                <a href="#"
+                                    class="inline-block font-bold text-xl hover:text-pink-600 pt-2 mb-1 group-hover:text-white duration-300">Ui
+                                    & Ux
+                                    Design</a>
+                                <p class="text-md text-gray-600 group-hover:text-white duration-300">02 Courses</p>
+                                <div
+                                    class="absolute top-6 right-10 invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-300">
+                                    <i class="ri-play-line -rotate-45 inline-block text-4xl text-yellow-500 "></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Online-Course -->
+        <section class="online-course py-14">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap items-center">
+                    <div class="lg:w-6/12 w-full">
+                        <div class="online-course-title text-center lg:text-start">
+                            <span
+                                class="bg-[#E7DEFF] py-1 px-4 rounded-full text-violet-600 font-bold text-sm inline-block">Course
+                                List</span>
+                            <h4 class="sm:text-5xl text-4xl font-bold mt-4 text-gray-600">Perfect Online Course Your
+                                Carrer</h4>
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 w-full">
+                        <div class="online-course-title text-center md:text-end">
+                            <ul class="portfolio-cats flex flex-wrap justify-center lg:justify-end mt-6 lg:mt-0">
+                                <li>
+                                    <a href="javascript:void(0)"
+                                        class=" mx-6 lg:mx-0 py-1 inline-block text-violet-600 font-semibold hover:text-violet-600 duration-300">See
+                                        All </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"
+                                        class="lg:ms-6 mx-6 lg:mx-0 py-1 inline-block font-semibold hover:text-violet-600 duration-300">Artificial
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"
+                                        class="lg:ms-6 mx-6 lg:mx-0 py-1 inline-block font-semibold hover:text-violet-600 duration-300">Featured
+                                    </a>
+                                </li>
+                                <li><a href="javascript:void(0)"
+                                        class="lg:ms-6 mx-6 lg:mx-0 py-1 inline-block font-semibold hover:text-violet-600 duration-300">Language
+                                    </a></li>
+                                <li><a href="javascript:void(0)"
+                                        class="lg:ms-6 mx-6 py-1 lg:mx-0 inline-block font-semibold hover:text-violet-600 duration-300">Ui
+                                        &
+                                        Ux
+                                        Design</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="online-course-inner mt-12">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="featured-items border p-4 lg:mx-2 md:m-2 my-2">
+                                <div class="featured-img group   relative overflow-hidden">
+                                    <img src="../dist/img/img-5-700x417.jpg"
+                                        class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                        alt="img-5-700x417" title="img-5-700x417">
+                                    <a href="#"
+                                        class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-blue-600 text-white">Artificial</a>
+                                    <i
+                                        class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                                </div>
+                                <div class="featured-content">
+                                    <ul class="flex justify-between py-4">
+                                        <li><i class="ri-git-repository-line text-violet-600"></i> 4 Lesson</li>
+                                        <li><i class="ri-time-line text-violet-600"></i> 5hours 35min</li>
+                                    </ul>
+                                    <a href="#">
+                                        <h3 class="text-[20px] font-semibold hover:text-violet-600">Statistics Data
+                                            Scince and Business Analysis
+                                        </h3>
+                                    </a>
+                                    <p class="text-green-500 py-4 font-semibold">Free</p>
+                                    <div class="flex items-center justify-between pt-4 border-t">
+                                        <ul class="flex items-center">
+                                            <li>
+                                                <img src="../dist/img/teacher__1.png" alt="teacher__1"
+                                                    title="teacher__1" class="w-12">
+                                            </li>
+                                            <li class="ms-2">
+                                                Jhon Sina
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="featured-items group border p-4 lg:mx-2 md:m-2 my-2 ">
+                                <div class="featured-img relative overflow-hidden " data-filter="Artificial">
+                                    <img src="../dist/img/img-4.jpg"
+                                        class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                        alt="">
+                                    <a href="#"
+                                        class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-pink-600 text-white">Artificial</a>
+                                    <i
+                                        class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                                </div>
+                                <div class="featured-content">
+                                    <ul class="flex justify-between py-4">
+                                        <li><i class="ri-git-repository-line text-violet-600"></i> 2 Lesson</li>
+                                        <li><i class="ri-time-line text-violet-600"></i> 5hours 35min</li>
+                                    </ul>
+                                    <a href="#">
+                                        <h3 class="text-[20px] font-semibold hover:text-violet-600">A Complete Guide to
+                                            Photography You Know
+                                        </h3>
+                                    </a>
+                                    <p class="text-violet-600 py-4 font-semibold">$70 <span
+                                            class="inline-block text-gray-400 ms-1 line-through">$100</span> </p>
+                                    <div class="flex items-center justify-between pt-4 border-t">
+                                        <ul class="flex items-center">
+                                            <li>
+                                                <img src="../dist/img/teacher__1.png" alt="teacher__1"
+                                                    title="teacher__1" class="w-12">
+                                            </li>
+                                            <li class="ms-2">
+                                                Jhon Sina
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="featured-items group border p-4 lg:mx-2 md:m-2 my-2">
+                                <div class="featured-img relative overflow-hidden">
+                                    <img src="../dist/img/img-2.jpg"
+                                        class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                        alt="">
+                                    <a href="#"
+                                        class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-green-500 text-white">
+                                        Language
+                                    </a>
+                                    <i
+                                        class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                                </div>
+                                <div class="featured-content">
+                                    <ul class="flex justify-between py-4">
+                                        <li><i class="ri-git-repository-line text-violet-600"></i> 4 Lesson</li>
+                                        <li><i class="ri-time-line text-violet-600"></i> 5hours 35min</li>
+                                    </ul>
+                                    <a href="#">
+                                        <h3 class="text-[20px] font-semibold hover:text-violet-600">AWS Certified
+                                            Solutions Architect Associate
+                                        </h3>
+                                    </a>
+                                    <p class="text-violet-600 py-4 font-semibold">$150.00</p>
+                                    <div class="flex items-center justify-between pt-4 border-t">
+                                        <ul class="flex items-center">
+                                            <li>
+                                                <img src="../dist/img/teacher__1.png" alt="teacher__1"
+                                                    title="teacher__1" class="w-12">
+                                            </li>
+                                            <li class="ms-2">
+                                                Jhon Sina
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="featured-items group border p-4 lg:mx-2 md:m-2 my-2">
+                                <div class="featured-img relative overflow-hidden">
+                                    <img src="../dist/img/img-4.jpg"
+                                        class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                        alt="">
+                                    <a href="#"
+                                        class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-pink-600 text-white">Artificial</a>
+                                    <i
+                                        class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                                </div>
+                                <div class="featured-content">
+                                    <ul class="flex justify-between py-4">
+                                        <li><i class="ri-git-repository-line text-violet-600"></i> 3 Lesson</li>
+                                        <li><i class="ri-time-line text-violet-600"></i> 6hours 35min</li>
+                                    </ul>
+                                    <a href="#">
+                                        <h3 class="text-[20px] font-semibold hover:text-violet-600">Psychology of
+                                            Financial Success: Master Finance</h3>
+                                    </a>
+                                    <p class="text-violet-600 py-4 font-semibold">$60.00</p>
+                                    <div class="flex items-center justify-between pt-4 border-t">
+                                        <ul class="flex items-center">
+                                            <li>
+                                                <img src="../dist/img/teacher__1.png" alt="teacher__1"
+                                                    title="teacher__1" class="w-12">
+                                            </li>
+                                            <li class="ms-2">
+                                                Jhon Sina
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="featured-items group border p-4 lg:mx-2 md:m-2 my-2">
+                                <div class="featured-img relative overflow-hidden">
+                                    <img src="../dist/img/img-3.jpg"
+                                        class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                        alt="">
+                                    <a href="#"
+                                        class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-yellow-500 text-white">Article</a>
+                                    <i
+                                        class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                                </div>
+                                <div class="featured-content">
+                                    <ul class="flex justify-between py-4">
+                                        <li><i class="ri-git-repository-line text-violet-600"></i> 4 Lesson</li>
+                                        <li><i class="ri-time-line text-violet-600"></i> 4 hours 20min</li>
+                                    </ul>
+                                    <a href="#">
+                                        <h3 class="text-[20px] font-semibold hover:text-violet-600">Python for Data
+                                            Science & Machine Learning
+                                        </h3>
+                                    </a>
+                                    <p class="text-violet-600 py-4 font-semibold">$40.00</p>
+                                    <div class="flex items-center justify-between pt-4 border-t">
+                                        <ul class="flex items-center">
+                                            <li>
+                                                <img src="../dist/img/teacher__1.png" alt="teacher__1"
+                                                    title="teacher__1" class="w-12">
+                                            </li>
+                                            <li class="ms-2">
+                                                Jhon Sina
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                            <i class="ri-star-line text-gray-600 text-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="featured-items group border p-4 lg:mx-2 md:m-2 my-2">
+                                <div class="featured-img relative overflow-hidden">
+                                    <img src="../dist/img/img-1.jpg"
+                                        class="rounded-md hover:rounded-none transition-all duration-300 group-hover:scale-110"
+                                        alt="">
+                                    <a href="#"
+                                        class="inline-block absolute top-1 left-1 py-1 rounded-md px-4 text-sm bg-blue-600 text-white">
+                                        Artificial
+                                    </a>
+                                    <i
+                                        class="ri-bookmark-line py-0.5 px-1 text-sm absolute top-1 right-1 inline-block bg-[#00000031] text-white"></i>
+                                </div>
+                                <div class="featured-content">
+                                    <ul class="flex justify-between py-4">
+                                        <li><i class="ri-git-repository-line text-violet-600"></i> 4 Lesson</li>
+                                        <li><i class="ri-time-line text-violet-600"></i> 5hours 35min</li>
+                                    </ul>
+                                    <a href="#">
+                                        <h3 class="text-[20px] font-semibold hover:text-violet-600">Statistics Data
+                                            Scince and Business Analysis</h3>
+                                    </a>
+                                    <p class="text-violet-600 py-4 font-semibold">$150.00</p>
+                                    <div class="flex items-center justify-between pt-4 border-t">
+                                        <ul class="flex items-center">
+                                            <li>
+                                                <img src="../dist/img/teacher__1.png" alt="teacher__1"
+                                                    title="teacher__1" class="w-12">
+                                            </li>
+                                            <li class="ms-2">
+                                                Jhon Sina
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                            <i class="ri-star-s-fill text-yellow-500 text-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register -->
+
+        <section class="register py-28 bg-[url(../dist/img/Group-20517.jpg)]">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="lg:w-6/12 w-full">
+                        <div class="register-items">
+                            <span
+                                class="bg-[#E7DEFF] py-1 px-4 rounded-full text-violet-600 font-bold text-sm inline-block">Course
+                                List</span>
+                            <h4 class="text-5xl font-bold mt-4 text-white leading-[1.3]">Register Your <span
+                                    class="inline-block border-b-[6px] border-pink-600">Account</span> Get
+                                free access to
+                                60000
+                                online course</h4>
+                            <ul class="flex items-center mt-8">
+                                <li><a href="#"
+                                        class="h-20 w-20 leading-[80px] bg-pink-600 inline-block rounded-full text-center text-4xl text-white me-6"><i
+                                            class="ri-play-line inline-block"></i></a></li>
+                                <li>
+                                    <p class="text-white text-2xl">Learn Something new & Build Your Career From
+                                        Anywhere In The
+                                        World</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 w-full">
+                        <div class="register-items relative mt-8 lg:mt-0">
+                            <form action=""
+                                class="bg-white lg:mx-12 p-8 rounded-md lg:absolute lg:top-0 lg:left-0 border">
+                                <h2 class="text-2xl outline-blue-600 font-semibold text-gray-600 my-4 ">Fill Your
+                                    Registration
+                                </h2>
+                                <input type="text" placeholder="Your Name"
+                                    class="w-full bg-[#F0F1F3] outline-blue-600 my-4 p-2 rounded-md">
+                                <div class="flex">
+                                    <input type="email" placeholder="Email Address"
+                                        class="w-1/2 outline-blue-600 bg-[#F0F1F3] my-4 p-2 rounded-md me-4">
+                                    <input type="number" placeholder="Phone"
+                                        class="w-1/2 outline-blue-600 bg-[#F0F1F3] my-4 p-2 rounded-md ms-4">
+                                </div>
+                                <input type="text" placeholder="Address"
+                                    class="w-full my-4 p-2 outline-blue-600 bg-[#F0F1F3] rounded-md">
+                                <textarea cols="30" rows="5" placeholder="Comment"
+                                    class="w-full bg-[#F0F1F3] outline-blue-600 my-4 p-2  rounded-md">
+                                </textarea>
+
+                                <a href="#"
+                                    class="py-3 px-6 inline-block rounded-md bg-blue-600 text-white font-semibold">Sing
+                                    Up <i class="ri-arrow-right-line"></i></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- expert-teacher -->
+        <section class="expert-teacher mt-52">
+            <div class="container mx-auto px-4 ">
+                <div class="text-center expert-teacher-title">
+                    <span class="text-pink-600">EXPERT TEACHER</span>
+                    <h2 class="text-5xl leading-[1.4] font-bold mt-4 text-gray-600">Our Expert Teacher</h2>
+                </div>
+                <div class="expert-teacher-inner mt-16">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="expert-teacher-items group my-4 md:m-4 lg:my-0 lg:mx-4">
+                                <div class="expert-teacher-img relative overflow-hidden">
+                                    <img src="../dist/img/team__1.png" alt="" class="w-full">
+                                    <div class="absolute top-4 group-hover:right-4 -right-full duration-300">
+                                        <ul class="flex flex-col">
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-facebook-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-linkedin-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-whatsapp-line"></i>
+                                                </a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-twitter-fill"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="expert-teacher-content mt-6">
+                                    <p class="font-semibold text-gray-600">INTERIOR DESIGNER</p>
+                                    <a href="#" class="text-2xl text-gray-600 hover:text-violet-600 font-semibold">
+                                        Mirnsdo Jons
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="expert-teacher-items group my-4 md:m-4 lg:my-0 lg:mx-4">
+                                <div class="expert-teacher-img relative overflow-hidden">
+                                    <img src="../dist/img/team__3.png" alt="" class="w-full">
+                                    <div class="absolute top-4 group-hover:right-4 -right-full duration-300">
+                                        <ul class="flex flex-col">
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-facebook-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-linkedin-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-whatsapp-line"></i>
+                                                </a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-twitter-fill"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="expert-teacher-content mt-6">
+                                    <p class="font-semibold text-gray-600">SEO COUNDER XPRO</p>
+                                    <a href="#" class="text-2xl text-gray-600 hover:text-violet-600 font-semibold">
+                                        Daniel Rock
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="expert-teacher-items group my-4 md:m-4 lg:my-0 lg:mx-4">
+                                <div class="expert-teacher-img relative overflow-hidden">
+                                    <img src="../dist/img/team__2.png" alt="" class="w-full">
+                                    <div class="absolute top-4 group-hover:right-4 -right-full duration-300">
+                                        <ul class="flex flex-col">
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-facebook-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-linkedin-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-whatsapp-line"></i>
+                                                </a>
+                                            </li>
+                                            <li class="my-1">
+                                                <a href="#"
+                                                    class="inline-block w-10 h-10 leading-10 text-gray-500 bg-white rounded-md text-center text-xl">
+                                                    <i class="ri-twitter-fill"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="expert-teacher-content mt-6">
+                                    <p class="font-semibold text-gray-600">WEB DEVELOPER</p>
+                                    <a href="#" class="text-2xl text-gray-600 hover:text-violet-600 font-semibold">
+                                        Sajid Mustahidul
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  Testimonial-->
+        <section class="testimonial py-14 mt-20 bg-[#F5F5FE]">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="lg:w-6/12 w-full">
+                        <div class="testimonial-items mb-10 lg:mb-0">
+                            <span class="text-pink-600">EDUCATION SOLUTION</span>
+                            <h2 class="text-5xl font-bold mt-4 text-gray-600 mb-10">Client Testimonial About Our Lms
+                                Agency
+                            </h2>
+                            <div class="owl-carousel-2 owl-carousel owl-theme">
+                                <div class="testimonial-items">
+                                    <p class="text-xl text-gray-600 pb-8 leading-[1.8]">
+                                        <i class="ri-double-quotes-l text-violet-600 text-2xl"></i>
+                                        The other hand we denounce with righteou indg ation and
+                                        dislike men who are so beguiled and
+                                        demorali ed by the of pleasure of the moment.Dislike men who are so beguiled and
+                                        demoraliz
+                                        worlds ed by the charms of pleasure of the moment. Lorem ipsum dolor sit amet,
+                                        piscing
+                                        elit.
+                                        <i class="ri-double-quotes-r text-violet-600 text-2xl"></i>
+                                    </p>
+                                    <ul class="flex items-center">
+                                        <li class="me-4">
+                                            <img src="../dist/img/testi_2.png" alt="">
+                                        </li>
+                                        <li>
+                                            <h4 class="text-xl font-bold text-gray-500">Mirnsdo Jons</h4>
+                                            <p class="text-violet-600 mt-2">
+                                                Ui/Ux Designer
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="testimonial-items">
+                                    <p class="text-xl text-gray-600 pb-8 leading-[1.8]">
+                                        <i class="ri-double-quotes-l text-violet-600 text-2xl"></i>
+                                        The other hand we denounce with righteou indg ation and
+                                        dislike men who are so beguiled and
+                                        demorali ed by the of pleasure of the moment.Dislike men who are so beguiled and
+                                        demoraliz
+                                        worlds ed by the charms of pleasure of the moment. Lorem ipsum dolor sit amet,
+                                        piscing
+                                        elit.
+                                        <i class="ri-double-quotes-r text-violet-600 text-2xl"></i>
+                                    </p>
+                                    <ul class="flex items-center">
+                                        <li class="me-4">
+                                            <img src="../dist/img/testi_2.png" alt="">
+                                        </li>
+                                        <li>
+                                            <h4 class="text-xl font-bold text-gray-500">Mirnsdo Jons</h4>
+                                            <p class="text-violet-600 mt-2">
+                                                Ui/Ux Designer
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="testimonial-items">
+                                    <p class="text-xl text-gray-600 pb-8 leading-[1.8]">
+                                        <i class="ri-double-quotes-l text-violet-600 text-2xl"></i>
+                                        The other hand we denounce with righteou indg ation and
+                                        dislike men who are so beguiled and
+                                        demorali ed by the of pleasure of the moment.Dislike men who are so beguiled and
+                                        demoraliz
+                                        worlds ed by the charms of pleasure of the moment. Lorem ipsum dolor sit amet,
+                                        piscing
+                                        elit.
+                                        <i class="ri-double-quotes-r text-violet-600 text-2xl"></i>
+                                    </p>
+                                    <ul class="flex items-center">
+                                        <li class="me-4">
+                                            <img src="../dist/img/testi_2.png" alt="">
+                                        </li>
+                                        <li>
+                                            <h4 class="text-xl font-bold text-gray-500">Mirnsdo Jons</h4>
+                                            <p class="text-violet-600 mt-2">
+                                                Ui/Ux Designer
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 w-full">
+                        <div class="testimonial-items lg:ms-12">
+                            <img src="../dist/img/testi__group__1.png" alt="" class="w-full card">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWS & BLOG -->
+
+        <section class="news-blog py-14">
+            <div class="container mx-auto px-4">
+                <div class="news-blog-title text-center">
+                    <span class="text-pink-600">NEWS & BLOG</span>
+                    <h2 class="text-5xl font-bold mt-4 text-gray-600 mb-10">
+                        Latest News & Blogs
+                    </h2>
+                </div>
+                <div class="news-blog-inner">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="news-blog-items shadow-[0_0_50px_10px_#5f2ded1a] my-4 md:m-4 lg:mx-4 lg:my-0">
+                                <div class="news-img relative">
+                                    <img src="../dist/img/Mask-Group-1.jpg" alt="Mask-Group-1" title="Mask-Group-1">
+                                    <a href="#"
+                                        class="inline-block py-2 bg-black px-12 rounded-full text-white absolute left-8 bottom-6 hover:text-black hover:bg-white border border-black duration-300">Story</a>
+                                </div>
+                                <div class="news-content p-8 bg-white">
+                                    <p class="text-lg font-semibold text-violet-600">22 JUNE 2023</p>
+                                    <a href="#" class="hover:text-violet-600 duration-300 py-4 inline-block">
+                                        <h2 class="text-2xl font-bold">We are praying for our community and platform.
+                                        </h2>
+                                    </a>
+                                    <a href="#" class="hover:text-violet-600 duration-300">READ MORE <i
+                                            class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="news-blog-items shadow-[0_0_50px_10px_#5f2ded1a] my-4 md:m-4 lg:mx-4 lg:my-0">
+                                <div class="news-img relative">
+                                    <img src="../dist/img/Mask-Group-2.jpg" alt="Mask-Group-2" title="Mask-Group-2">
+                                    <a href="#"
+                                        class="inline-block py-2 bg-black px-12 rounded-full text-white absolute left-8 bottom-6 hover:text-black hover:bg-white border border-black duration-300">Study</a>
+                                </div>
+                                <div class="news-content p-8 bg-white">
+                                    <p class="text-lg font-semibold text-violet-600">22 JUNE 2023</p>
+                                    <a href="#" class="hover:text-violet-600 duration-300 py-4 inline-block">
+                                        <h2 class="text-2xl font-bold">Delivering What Consumers Really Value?
+
+                                        </h2>
+                                    </a>
+                                    <a href="#" class="hover:text-violet-600 duration-300">READ MORE <i
+                                            class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 w-full">
+                            <div class="news-blog-items shadow-[0_0_50px_10px_#5f2ded1a] my-4 md:m-4 lg:mx-4 lg:my-0">
+                                <div class="news-img relative">
+                                    <img src="../dist/img/Mask-Group-3.jpg" alt="Mask-Group-3" title="Mask-Group-3">
+                                    <a href="#"
+                                        class="inline-block py-2 bg-black px-12 rounded-full text-white absolute left-8 bottom-6 hover:text-black hover:bg-white border border-black duration-300">Technology</a>
+                                </div>
+                                <div class="news-content p-8 bg-white">
+                                    <p class="text-lg font-semibold text-violet-600">22 JUNE 2023</p>
+                                    <a href="#" class="hover:text-violet-600 duration-300 py-4 inline-block">
+                                        <h2 class="text-2xl font-bold">Here at First Baptist Cape Coral we believe!
+                                        </h2>
+                                    </a>
+                                    <a href="#" class="hover:text-violet-600 duration-300">READ MORE <i
+                                            class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center py-10">
+                        <a href="#"
+                            class="inline-block px-8 py-3 rounded-md border border-violet-600 hover:bg-white hover:text-violet-600 duration-300  bg-violet-600 text-white">MORE
+                            BLOG</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="bg-[#0C0E2B] ">
+        <div class="container mx-auto px-4">
+            <div class="support py-20 border-b ">
+                <div class="flex flex-wrap items-end">
+                    <div class="lg:w-6/12 w-full">
+                        <div class="support-items text-center lg:text-start">
+                            <h2 class="text-4xl text-white font-bold">Still You Need Our <span
+                                    class="text-violet-600">Support ?</span></h2>
+                            <p class="mt-3 text-gray-300">Don’t wait make a smart & logical quote here. Its
+                                pretty easy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 w-full">
+                        <div class="support-items relative mt-8 lg:mt-0">
+                            <input type="email" placeholder="Enter your email here"
+                                class="w-full py-4 rounded-md px-4 bg-[#202942]">
+                            <a href="#"
+                                class="inline-block py-3 px-6 bg-violet-600 text-white font-semibold rounded-md absolute top-1/2 right-1 -translate-y-1/2 hover:bg-transparent border border-violet-600 duration-300">SUBSCRIBE
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-link-inner py-16 lg:20">
+                <div class="flex flex-wrap">
+                    <div class="lg:w-3/12 w-full ">
+                        <div class="about-link-items my-4 sm:m-4 lg:my-0">
+                            <h4 class="text-white font-black text-xl mb-8">About Us</h4>
+                            <p class="text-gray-300 ">orporate clients and leisure travelers has been relying on
+                                Groundlink for dependable
+                                safe, and professional chauffeured car end service in major cities across World.</p>
+                            <ul class="mt-8 flex">
+                                <li class="me-4">
+                                    <i
+                                        class="ri-timer-line inline-block bg-violet-600 w-20 h-20 leading-[80px] text-center text-3xl text-white"></i>
+                                </li>
+                                <li>
+                                    <h6 class="text-white font-semibold mb-2">OPENING HOURES</h6>
+                                    <p class="text-gray-300">Mon - Sat(8.00 - 6.00) Sunday - Closed</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/12 sm:w-6/12 w-full">
+                        <div class="about-link-items my-4 sm:m-4 lg:my-0">
+                            <h4 class="text-white font-black text-xl mb-8">Usefull Links</h4>
+                            <ul>
+                                <li><a href="#"
+                                        class="inline-block relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 text-gray-300 mb-2">About
+                                        Us</a></li>
+                                <li><a href="#"
+                                        class="inline-block text-gray-300 my-2 relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 ">Dashboard</a>
+                                </li>
+                                <li><a href="#"
+                                        class="inline-block text-gray-300 my-2 relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 ">Instructor
+                                        Registration</a></li>
+                                <li><a href="#"
+                                        class="inline-block text-gray-300 my-2 relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 ">Course
+                                        List</a></li>
+                                <li><a href="#"
+                                        class="inline-block text-gray-300 mt-2 relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 ">Course
+                                        Grid</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/12 sm:w-6/12 w-full">
+                        <div class="about-link-items my-4 sm:m-4 lg:my-0">
+                            <h4 class="text-white font-black text-xl mb-8">Recent Post</h4>
+                            <ul>
+                                <li><a href="#"
+                                        class="inline-block text-gray-300 mb-2 relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 ">Master
+                                        Finance</a></li>
+                                <li><a href="#"
+                                        class="inline-block text-gray-300 my-2  relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 ">Strategy
+                                        law
+                                    </a></li>
+                                <li><a href="#"
+                                        class="inline-block text-gray-300 my-2 relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 ">Machine
+                                        Learning
+                                    </a></li>
+                                <li><a href="#"
+                                        class="inline-block text-gray-300 my-2 relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 ">Designer
+                                        Essential Skills
+                                    </a></li>
+                                <li><a href="#"
+                                        class="inline-block text-gray-300 mt-2 relative hover:text-violet-600 before:w-full before:h-full before:border-b-2 before:absolute before:top-0 before:bottom-0 before:border-violet-600 before:origin-bottom-left before:scale-0 hover:before:scale-100 before:duration-500 ">Design
+                                        in Figma</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/12 w-full ">
+                        <div class="about-link-items my-4 sm:m-4 lg:my-0">
+                            <h4 class="text-white font-black text-xl mb-8">Usefull Links</h4>
+                            <ul class="flex items-center my-4">
+                                <li class="w-4/12 me-4"><img src="../dist/img/Mask-Group-1.jpg" alt="" class="w-full">
+                                </li>
+                                <li class="w-8/12">
+                                    <p class="text-sm text-gray-300">June 22, 2023</p>
+                                    <a href="#" class="font-semibold text-white hover:text-violet-600">We are
+                                        praying</a>
+                                </li>
+                            </ul>
+                            <ul class="flex items-center my-4">
+                                <li class="w-4/12 me-4"><img src="../dist/img/Mask-Group-2.jpg" alt="" class="w-full">
+                                </li>
+                                <li class="w-8/12">
+                                    <p class="text-sm text-gray-300">June 22, 2023</p>
+                                    <a href="#" class="font-semibold text-white hover:text-violet-600">Here at First</a>
+                                </li>
+                            </ul>
+                            <ul class="flex items-center my-4
+                            ">
+                                <li class="w-4/12 me-4"><img src="../dist/img/Mask-Group-3.jpg" alt="" class="w-full">
+                                </li>
+                                <li class="w-8/12">
+                                    <p class="text-sm text-gray-300">June 22, 2023</p>
+                                    <a href="#" class="font-semibold text-white hover:text-violet-600">Delivering What
+                                        Consumers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright py-8">
+                <div class="flex flex-wrap items-center">
+                    <div class="lg:w-6/12 w-full">
+                        <div class="copyright-items flex flex-wrap items-center">
+                            <div class="lg:w-6/12 w-full">
+                                <div class="copyright-img">
+                                    <img src="../dist/img/logo_1.png" alt="logo_1" title="logo_1"
+                                        class="mx-auto lg:mx-0">
+                                </div>
+                            </div>
+                            <div class="lg:w-6/12 w-full">
+                                <div class="copyright-content text-center lg:text-center py-2 lg:py-0">
+                                    <p class="text-white">© 2023 Powered by <a href="javascript:void(0)"
+                                            class="inline-block text-violet-600">Reacthemes.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 w-full">
+                        <div class="copyright-items flex justify-center lg:justify-end">
+                            <a href="#"
+                                class="inline-block w-10 h-10 leading-10 text-center bg-[#FFFFFF1A] text-white text-2xl hover:bg-violet-600 duration-300 mx-1 lg:ms-1"><i
+                                    class="ri-angularjs-fill"></i></a>
+                            <a href="#"
+                                class="inline-block w-10 h-10 leading-10 text-center bg-[#FFFFFF1A] text-white text-2xl hover:bg-violet-600 duration-300 mx-1 lg:ms-1"><i
+                                    class="ri-facebook-fill"></i></a>
+                            <a href="#"
+                                class="inline-block w-10 h-10 leading-10 text-center bg-[#FFFFFF1A] text-white text-2xl hover:bg-violet-600 duration-300 mx-1 lg:ms-1"><i
+                                    class="ri-instagram-fill"></i></a>
+                            <a href="#"
+                                class="inline-block w-10 h-10 leading-10 text-center bg-[#FFFFFF1A] text-white text-2xl hover:bg-violet-600 duration-300 mx-1 lg:ms-1"><i
+                                    class="ri-messenger-fill"></i></a>
+                            <a href="#"
+                                class="inline-block w-10 h-10 leading-10 text-center bg-[#FFFFFF1A] text-white text-2xl hover:bg-violet-600 duration-300 mx-1 lg:ms-1"><i
+                                    class="ri-linkedin-box-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="../dist/js/jquery-3.7.1.min.js"></script>
+    <script src="../dist/js/owl.carousel.min.js"></script>
+    <script src="../dist/js/unpkg.com_tilt.js@1.1.19_dest_tilt.jquery.js"></script>
+    <script src="../dist/js/myFill.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

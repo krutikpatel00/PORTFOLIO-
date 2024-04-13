@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-black: #000;
+  --color-black-dark: #555555;
+  --color-white: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  display: inline-block !important;
+  text-decoration: none;
+}
+
+/* header */
+header nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+  
+}
+footer ul li a,
+header a,
+header nav ul li a {
+  color: var(--color-black);
+  transition: 0.3s all;
+}
+
+header nav ul li a:hover,
+footer ul li a:hover {
+  color: var(--color-black-dark);
+  text-decoration: underline !important;
+}
+
+/* profail */
+.profail {
+  margin: 80px 0;
+}
+.profail-img img {
+  width: 100%;
+}
+.profail-content {
+  margin: 30px 0 0 0;
+}
+.profail-content p,
+.about-items p,
+.about-content p,
+.experience-items h3 {
+  color: var(--color-black-dark);
+}
+.profail-content h4 {
+  font-size: 30px;
+  color: var(--color-black-dark);
+}
+.theme-btn a:first-child,
+.theme-btn a:last-child {
+  border: 1px solid black;
+  color: #000;
+}
+.theme-btn a:last-child {
+  color: var(--color-white);
+  background-color: #353535;
+}
+.profail-content > a {
+  color: var(--color-black);
+}
+
+/* about */
+.about,
+.experience,
+.projects {
+  padding: 80px 0;
+}
+
+/* contact */

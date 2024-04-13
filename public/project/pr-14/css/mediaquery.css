@@ -1,0 +1,258 @@
+/* xl */
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1360px;
+  }
+  .why-choose-value {
+    transform: translateY(161px);
+  }
+}
+/* xl */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 1140px;
+  }
+  .why-choose-value {
+    transform: translateY(121px);
+  }
+  .why-choose-value h2 {
+    font-size: 33px;
+  }
+}
+
+/* md */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .w-md-3 {
+    width: 33.33%;
+  }
+  .w-md-2 {
+    width: 50%;
+  }
+  .w-md-1 {
+    width: 100%;
+  }
+  .order-md-1 {
+    order: 1;
+  }
+  .py-md {
+    padding: 100px 0 30px 0;
+  }
+  /* header */
+  header {
+    position: relative;
+  }
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f6f8fb;
+    padding: 10px;
+    z-index: 9;
+    text-align: center;
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  header nav ul li a {
+    padding: 10px 0;
+  }
+  header nav ul li a:hover {
+    color: #db2319;
+  }
+  header .header-btn {
+    display: none;
+  }
+  .taggle-manu {
+    display: block;
+  }
+
+  /* banner */
+  .banner-content img {
+    display: none;
+  }
+  .banner-img-items {
+    display: none;
+  }
+  .banner-content {
+    padding-top: 30px;
+  }
+
+  /* about */
+
+  .about-us-img {
+    padding: 0 0 30px 0;
+  }
+  .about-us-content {
+    margin: 0;
+  }
+
+  /* category */
+  .customPrevBtn-2 {
+    right: 25px;
+  }
+  .customNextBtn-2 {
+    left: 25px;
+  }
+
+  /* WHY-CHOOSE-US */
+  .why-choose-img {
+    margin: 0;
+  }
+  .why-choose-content {
+    margin-top: 30px;
+  }
+  .why-choose-value-items {
+    margin: 15px 0;
+  }
+  .why-choose-value {
+    padding: 15px 0 0 0;
+    transform: translateY(0px);
+  }
+  .why-choose-us::before {
+    width: 100%;
+    height: 50%;
+  }
+  /* RESALE-WORKS */
+  .resale-title h2 {
+    display: block;
+  }
+  .resale-works .resale-works-content h2 {
+    display: none;
+  }
+  /* gallery */
+  .gallery-inner {
+    column-count: 2;
+  }
+  /* footer */
+
+  .footer-items {
+    padding: 15px 0;
+    margin: 0 5px;
+  }
+}
+
+/* sm */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .w-sm-1 {
+    width: 100%;
+  }
+  /* banner */
+  .banner-icon-img .banner-icon-1 {
+    width: 50px;
+    left: 0;
+  }
+  .banner-icon-img .banner-icon-2 {
+    width: 40px;
+    bottom: -20px;
+  }
+  .banner-icon-img .banner-icon-3 {
+    width: 50px;
+  }
+  .banner-icon-img .banner-icon-4 {
+    width: 50px;
+    left: -10px;
+  }
+  .banner .banner-content h1 {
+    font-size: 60px;
+  }
+
+  /* about */
+  .counter-items {
+    margin: 15px 0;
+  }
+  .about-us-counter {
+    padding: 0 100px;
+  }
+  /* why-choose-us */
+  .why-choose-us::before {
+    width: 100%;
+    height: 30%;
+  }
+}
+
+/* xs */
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  .footer-items li,
+  p {
+    font-size: 16px;
+  }
+  /* .category-title h2,
+  .resale-title h2,
+  .review-title h2,
+  .trip-title h2,
+  .about-us-content h2,
+  .contact-us .contact-us-content h2,
+  .why-choose-content h2,
+  .gallery-title h2 {
+    
+  } */
+  /* .gallery-title h5,
+  .about-us-content h5,
+  .category-title h5,
+  .resale-title h5,
+  .review-title h5,
+  .trip-title h5 {
+    font-size: 18px;
+  } */
+
+  /* .gallery-title p,
+  .why-choose-content > p,
+  .why-choose-content a,
+  .about-us-content p,
+  .about-us-content a,
+  .banner .banner-content p,
+  .banner-content a,
+  .review-inner .review-item p,
+  .contact-us .contact-us-content p,
+  .category-items p {
+    font-size: 12px;
+  } */
+
+  /* banner */
+  .banner .banner-content h1 {
+    font-size: 30px;
+  }
+  /* about */
+  .about-us-counter {
+    padding: 0 40px;
+  }
+  /* category */
+  .category-items {
+    margin: 0 30px;
+  }
+
+  .resale-works .resale-works-items h4 {
+    font-size: 20px;
+  }
+
+  /* why-choose-us */
+  .why-choose-us::before {
+    width: 100%;
+    height: 17%;
+  }
+  /* footer */
+  .footer-items h4 {
+    font-size: 18px;
+  }
+
+  .copyright-items p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,165 @@
+/* xl */
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+/* xl */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* md */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .w-md-3 {
+    width: 33.33%;
+  }
+  .w-md-2 {
+    width: 50%;
+  }
+  .w-md-1 {
+    width: 100%;
+  }
+  .order-md-1 {
+    order: 1;
+  }
+  .py-md {
+    padding: 100px 0 30px 0;
+  }
+  /* header */
+  header {
+    position: relative;
+  }
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f6f8fb;
+    padding: 10px;
+    z-index: 9;
+    text-align: center;
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  header nav ul li a {
+    padding: 10px 0;
+  }
+  header nav ul li a:hover {
+    color: #db2319;
+  }
+  header .header-btn {
+    display: none;
+  }
+  .taggle-manu {
+    display: block;
+  }
+
+  /* about */
+  .about-us-img {
+    padding: 0 0 30px 0;
+  }
+  .about-us-content {
+    margin: 0;
+  }
+  /* travel-agency */
+  .travel-agency-img img {
+    padding: 0;
+  }
+  /* mission */
+
+  .mission-content,
+  .vision-img {
+    padding-right: 0px;
+  }
+  .mission-img,
+  .vision-content {
+    padding-left: 0px;
+  }
+  .vision-content,
+  .mission-content {
+    padding-top: 30px;
+  }
+  /* travel-agency */
+  .travel-agency-title p,
+  .guide-title p {
+    width: auto;
+  }
+  /* footer */
+
+  .footer-items {
+    padding: 15px 0;
+    margin: 0 5px;
+  }
+}
+
+/* sm */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .w-sm-1 {
+    width: 100%;
+  }
+  /* about */
+  .counter-items {
+    margin: 15px 0;
+  }
+  .about-us-counter {
+    padding: 0 100px;
+  }
+}
+
+/* xs */
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+  .about-us-content {
+    text-align: center;
+  }
+
+  .about-banner h1 {
+    font-size: 44px;
+  }
+  p,
+  .footer-items li {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  .vision-content h4,
+  .mission-content h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .travel-agency-title h5,
+  .guide-title h5,
+  .about-us-content h5,
+  .guide-content h4 a {
+    font-size: 20px;
+  }
+
+  /* content -us banner */
+  .contact-banner h1 {
+    font-size: 40px;
+  }
+
+  /* about */
+  .about-us-counter {
+    padding: 0 40px;
+  }
+  /* footer */
+  .footer-items h4 {
+    font-size: 18px;
+  }
+}
