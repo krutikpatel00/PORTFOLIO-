@@ -6,20 +6,39 @@ import { FaGraduationCap } from "react-icons/fa";
 
 import { FaPhoneAlt } from "react-icons/fa";
 import { useNavBarContext } from '../../context/NavBarProvider';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 
 const About = () => {
       const { isNavOpen } = useNavBarContext()
+
+      useGSAP(() => {
+            gsap.from('.title h2', {
+                  x: -100,
+                  opacity: 0,
+                  direction: 1,
+                  delay: 0.5
+
+            })
+            gsap.from('.about-img img', {
+                  scale: 0,
+                  opacity: 0,
+                  direction: 1,
+                  delay: 0.5
+            })
+      }, {})
+
       return (
 
             <div className={`${isNavOpen ? 'margin-st-24' : 'margin-st-64'} mx-4`} >
-                  <div className='py-8 text-end'>
+                  <div className='py-8 text-end title'>
                         <h2 className=' text-4xl sm:text-6xl relative before:absolute before:top-1/4 before:-right-8 before:w-8 before:h-2 before:bg-[#00aaff29] rounded-xl bg-[#00aaff29]  inline-block py-6 px-10 text-white text-end me-4  after:absolute after:bottom-1/4 after:-right-8 after:w-8 after:h-2 after:bg-[#00aaff29] border before:border after:border border-[#fcfcfc0d] before:border-[#fcfcfc0d] after:border-[#fcfcfc0d]'>About</h2>
                   </div>
                   <div className="flex flex-wrap items-center">
                         <div className='w-full lg:w-4/12'>
                               <div className="about-img p-4 lg:ms-2 rounded-md  bg-[#041722] border border-[#fcfcfc0d]">
-                                    <img src="../../Image/profile-img.jpg" alt="profileimg" className='rounded-md' />
+                                    <img src="../../Image/profile-img.jpg" alt="profileimg" className='rounded-md ' />
                               </div>
                         </div>
                         <div className="w-full lg:w-8/12">

@@ -12,7 +12,6 @@ import Experiece from './Components/About/Experience/Experiece';
 import Loader from './Components/Loader/Loader';
 import { useNavBarContext } from './context/NavBarProvider';
 import FirebaseProvider from './context/FirebaseProvider';
-import ProjectForm from './Components/ProjectForm';
 
 function App() {
   const { isLoading } = useNavBarContext()
@@ -35,7 +34,6 @@ function App() {
                 <Route path='/service' element={<Service />} />
                 <Route path='/portfolio' element={<Portfolio />} />
                 <Route path='/contact' element={<Contact />} />
-                <Route path='/ProjectForm' element={< ProjectForm />} />
               </Route>
             </Route>
           </Routes>
