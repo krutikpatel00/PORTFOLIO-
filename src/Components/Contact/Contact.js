@@ -6,10 +6,11 @@ import { useNavBarContext } from '../../context/NavBarProvider';
 import { firebaseContext } from '../../context/FirebaseProvider';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useGSAP } from '@gsap/react';
 
 
 const Contact = () => {
-      const { isNavOpen } = useNavBarContext()
+      const { isNavOpen, tl } = useNavBarContext()
       const { DataSubmit } = useContext(firebaseContext)
       const [fromData, setFromData] = useState({})
 
@@ -25,14 +26,36 @@ const Contact = () => {
             setFromData({})
 
       }
+
+      useGSAP(() => {
+            tl.from('.contact-title', {
+                  x: -100,
+                  opacity: 0,
+                  direction: 1,
+                  delay: 0.5
+            })
+            tl.from('.contact-get-touch', {
+                  x: -100,
+                  opacity: 0,
+                  direction: 1,
+                  delay: 0.5
+            })
+            tl.from('.contact-us', {
+                  x: 100,
+                  opacity: 0,
+                  direction: 1,
+                  delay: 0.5
+            })
+      }, {})
+
       return (
             <div className={`${isNavOpen ? ' margin-st-24' : 'margin-st-64'}  me-4`}>
-                  <div className='py-8 text-end'>
+                  <div className='py-8 text-end contact-title'>
                         <h2 className=' text-4xl sm:text-6xl relative before:absolute before:top-1/4 before:-right-8 before:w-8 before:h-2 before:bg-[#00aaff29] rounded-xl bg-[#00aaff29]  inline-block py-6 px-10 text-white text-end me-4  after:absolute after:bottom-1/4 after:-right-8 after:w-8 after:h-2 after:bg-[#00aaff29] border before:border after:border border-[#fcfcfc0d] before:border-[#fcfcfc0d] after:border-[#fcfcfc0d]'>Contact Us</h2>
                   </div>
                   <div className="flex flex-wrap mb-12">
                         <div className=" w-full lg:w-6/12">
-                              <div className='p-8 lg:mx-2 bg-[#007dbb26] rounded-xl mb-8 lg:mb-0'>
+                              <div className='contact-get-touch p-8 lg:mx-2 bg-[#007dbb26] rounded-xl mb-8 lg:mb-0'>
                                     <h2 className='text-white text-4xl pb-8 '>Get In Touch</h2>
                                     <form action="" method='post' onSubmit={(e) => FromSubmit(e)}>
                                           <label htmlFor="" className='mb-1 inline-block text-white text-lg'>Name :</label>
@@ -83,7 +106,7 @@ const Contact = () => {
                               </div>
                         </div>
                         <div className=" w-full lg:w-6/12">
-                              <div className='p-8 lg:mx-2 bg-[#007dbb26] rounded-xl'>
+                              <div className='contact-us p-8 lg:mx-2 bg-[#007dbb26] rounded-xl'>
                                     <h2 className='text-white text-4xl pb-8 '>Contact Us</h2>
                                     <div className="flex flex-wrap mx-2">
                                           <div className='w-full'>

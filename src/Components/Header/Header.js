@@ -12,11 +12,11 @@ import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 
 const Header = () => {
-      const { navToggle, isNavOpen } = useNavBarContext();
+      const { navToggle, isNavOpen, tl } = useNavBarContext();
       const { Logout } = useContext(firebaseContext)
 
 
-      let tl = gsap.timeline()
+
       useGSAP(() => {
             tl.from(".logo-name", {
                   x: 300,
@@ -31,7 +31,7 @@ const Header = () => {
                   stagger: 0.3
             })
 
-      }, {})
+      }, { })
 
 
 

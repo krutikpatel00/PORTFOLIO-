@@ -1,8 +1,12 @@
 import React from 'react'
 import { useNavBarContext } from '../../../context/NavBarProvider';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const Skills = () => {
       const { isNavOpen } = useNavBarContext();
+
+     
       return (
             <div className={`${isNavOpen ? 'margin-st-24' : 'margin-st-64'} py-2 font-["Signika"]`}>
                   <div className="container mx-auto px-4">

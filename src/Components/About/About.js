@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaBirthdayCake } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -11,17 +11,33 @@ import { useGSAP } from '@gsap/react';
 
 
 const About = () => {
-      const { isNavOpen } = useNavBarContext()
+      const { isNavOpen, tl } = useNavBarContext()
+      useEffect(() => {
 
+      })
       useGSAP(() => {
-            gsap.from('.title h2', {
+            tl.from('.about-title h2', {
                   x: -100,
                   opacity: 0,
                   direction: 1,
                   delay: 0.5
 
             })
-            gsap.from('.about-img img', {
+
+            tl.from('.about-img', {
+                  scale: 0,
+                  opacity: 0,
+                  direction: 1,
+                  delay: 0.5
+            })
+            tl.from('.about-container', {
+                  x: 40,
+                  opacity: 0,
+                  direction: 1,
+                  delay: 0.5
+
+            })
+            tl.from('.about-basic-items', {
                   scale: 0,
                   opacity: 0,
                   direction: 1,
@@ -32,7 +48,7 @@ const About = () => {
       return (
 
             <div className={`${isNavOpen ? 'margin-st-24' : 'margin-st-64'} mx-4`} >
-                  <div className='py-8 text-end title'>
+                  <div className='py-8 text-end about-title'>
                         <h2 className=' text-4xl sm:text-6xl relative before:absolute before:top-1/4 before:-right-8 before:w-8 before:h-2 before:bg-[#00aaff29] rounded-xl bg-[#00aaff29]  inline-block py-6 px-10 text-white text-end me-4  after:absolute after:bottom-1/4 after:-right-8 after:w-8 after:h-2 after:bg-[#00aaff29] border before:border after:border border-[#fcfcfc0d] before:border-[#fcfcfc0d] after:border-[#fcfcfc0d]'>About</h2>
                   </div>
                   <div className="flex flex-wrap items-center">
