@@ -11,37 +11,37 @@ import { useGSAP } from '@gsap/react';
 
 
 const About = () => {
-      const { isNavOpen, tl } = useNavBarContext()
-      useEffect(() => {
+      const { isNavOpen } = useNavBarContext()
 
-      })
+      let tl = gsap.timeline()
       useGSAP(() => {
             tl.from('.about-title h2', {
                   x: -100,
                   opacity: 0,
-                  direction: 1,
+                  direction: 0.5,
                   delay: 0.5
 
             })
 
             tl.from('.about-img', {
-                  scale: 0,
+                  x: -200,
                   opacity: 0,
-                  direction: 1,
+                  direction: 0.5,
                   delay: 0.5
             })
             tl.from('.about-container', {
                   x: 40,
                   opacity: 0,
-                  direction: 1,
+                  direction: 0.5,
                   delay: 0.5
 
             })
             tl.from('.about-basic-items', {
                   scale: 0,
                   opacity: 0,
-                  direction: 1,
-                  delay: 0.5
+                  direction: 0.5,
+                  delay: 0.5,
+                  stagger: 0.5
             })
       }, {})
 

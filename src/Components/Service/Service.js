@@ -14,7 +14,8 @@ import { AiOutlineControl } from "react-icons/ai";
 
 import { TbLayoutSidebarLeftCollapse } from "react-icons/tb";
 import { useNavBarContext } from '../../context/NavBarProvider';
-
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 const newdata = [
 
       {
@@ -129,11 +130,23 @@ const Service = () => {
                   }
             ]
       };
-      console.log(expandedDescriptions);
+
+
+      const tl = gsap.timeline()
+      useGSAP(() => {
+            tl.from('.services-title h2', {
+                  x: -100,
+                  opacity: 0,
+                  direction: 1,
+                  delay: 0.5
+
+            })
+      }, {})
+
       return (
             <div className={`${isNavOpen ? ' margin-st-24' : 'margin-st-64'}  me-4`}>
                   <div>
-                        <div className='py-8 text-end'>
+                        <div className='py-8 text-end services-title'>
                               <h2 className=' text-4xl sm:text-6xl relative before:absolute before:top-1/4 before:-right-8 before:w-8 before:h-2 before:bg-[#00aaff29] rounded-xl bg-[#00aaff29]  inline-block py-6 px-10 text-white text-end me-4  after:absolute after:bottom-1/4 after:-right-8 after:w-8 after:h-2 after:bg-[#00aaff29]  border before:border after:border border-[#fcfcfc0d] before:border-[#fcfcfc0d] after:border-[#fcfcfc0d]'>Services</h2>
                         </div>
 

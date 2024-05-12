@@ -7,10 +7,10 @@ import { firebaseContext } from '../../context/FirebaseProvider';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useGSAP } from '@gsap/react';
-
+import gsap from 'gsap';
 
 const Contact = () => {
-      const { isNavOpen, tl } = useNavBarContext()
+      const { isNavOpen } = useNavBarContext()
       const { DataSubmit } = useContext(firebaseContext)
       const [fromData, setFromData] = useState({})
 
@@ -27,6 +27,7 @@ const Contact = () => {
 
       }
 
+      let tl = gsap.timeline()
       useGSAP(() => {
             tl.from('.contact-title', {
                   x: -100,
